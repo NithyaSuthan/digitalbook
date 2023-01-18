@@ -1,0 +1,31 @@
+<h3>BOOKS</h3>
+
+<table border="1" *ngIf="books.length>0">
+    <thead>
+        <tr>
+            <th>BookId</th>
+            <th>BookName</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Author</th>
+            <th>Block</th>
+            <th>Subscribe</th>
+            <th>Publisher</th>
+            <th>PublishedDate</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of books;let i=index">
+        <td>{{b.bookId}}</td>
+        <td>{{b.bookName}}</td>
+        <td>{{b.category}}</td>
+        <td>{{b.price}}</td>
+        <td>{{b.author}}</td>
+        <td>{{b.block}}</td>
+        <td>{{b.subscribe}}</td>
+        <td>{{b.publisher}}</td>
+        <td>{{b.publishedDate}}</td>
+        
+    </tr>
+    </tbody>
+  </table>

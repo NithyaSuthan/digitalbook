@@ -1,0 +1,35 @@
+<h3>Please enter the below details</h3>
+<table border="0">
+<thead>
+
+</thead>
+    <tbody>
+      <tr>
+        <td>Book Name:</td>
+        <td><input #bname/></td>
+      </tr>
+      <tr>
+        <td>Category:</td>
+        <td><input #category/></td>
+      </tr>
+      <tr>
+        <td>Price:</td>
+        <td><input #price/></td>
+      </tr>
+      <tr>
+        <td>Author:</td>
+        <td><input #author/></td>
+      </tr>
+      <tr>
+        <td>Publisher:</td>
+        <td><input #publisher/></td>
+      </tr>
+      <tr>
+        <td>Published Date:</td>
+        <td><input placeholder="yyyy-mm-dd" #pdate/></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <app-button (click)="addBook(bname.value,category.value,price.value,author.value,publisher.value,pdate.value)">Add</app-button>
+  <h5>{{message}}</h5>

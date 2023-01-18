@@ -1,0 +1,18 @@
+<h3>Create Account</h3>
+
+Username : <input #user />
+<hr>
+Password : <input #pass />
+<hr>
+<label for="role">UserRole : </label>
+<input list="browsers" name="role1" #roleid>
+
+<datalist id="browsers" name="role1">
+  <option value="READER">
+  <option value="AUTHOR">
+</datalist>
+<hr>
+<app-button (click)="signup(user.value,pass.value,roleid.value)">SignUp</app-button>
+<hr>
+<h5>{{message}}</h5>
+
